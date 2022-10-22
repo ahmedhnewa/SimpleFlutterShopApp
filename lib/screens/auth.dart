@@ -151,7 +151,6 @@ class _AuthCardState extends State<AuthCard>
             child: Column(
               children: <Widget>[
                 TextFormField(
-                  initialValue: 'ahmed@ahmed',
                   decoration: const InputDecoration(labelText: 'E-Mail'),
                   keyboardType: TextInputType.emailAddress,
                   validator: (value) {
@@ -184,7 +183,6 @@ class _AuthCardState extends State<AuthCard>
                     child: SlideTransition(
                       position: _slideAnimation,
                       child: TextFormField(
-                        initialValue: '123123123',
                         enabled: _authMode == AuthMode.Signup,
                         decoration: const InputDecoration(
                             labelText: 'Confirm Password'),
