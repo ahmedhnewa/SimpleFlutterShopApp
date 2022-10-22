@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:shop_app/helpers/custom_route.dart';
 
 import '/providers/orders.dart';
 import '/providers/cart.dart';
@@ -48,15 +47,17 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           title: 'Flutter Demo',
           theme: ThemeData(
-              brightness: Brightness.dark,
-              useMaterial3: true,
-              primarySwatch: Colors.blue,
-              accentColor: Colors.deepOrange,
-              fontFamily: 'Lato',
-              pageTransitionsTheme: PageTransitionsTheme(builders: {
-                TargetPlatform.android: CustomPageTransitionBuilder(),
-                TargetPlatform.iOS: CustomPageTransitionBuilder(),
-              })),
+            brightness: Brightness.dark,
+            useMaterial3: true,
+            primarySwatch: Colors.blue,
+            // ignore: deprecated_member_use
+            accentColor: Colors.deepOrange,
+            fontFamily: 'Lato',
+            // pageTransitionsTheme: PageTransitionsTheme(builders: {
+            //   TargetPlatform.android: CustomPageTransitionBuilder(),
+            //   TargetPlatform.iOS: CustomPageTransitionBuilder(),
+            // }),
+          ),
           themeMode: ThemeMode.dark,
           // home: const ProductsOverviewScreen(),
           home: auth.isAuth
