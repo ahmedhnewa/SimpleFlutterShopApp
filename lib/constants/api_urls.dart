@@ -1,3 +1,4 @@
+// please notice I have delete the firebase prject
 const databaseUrl =
     'https://demoproject-970fa-default-rtdb.europe-west1.firebasedatabase.app';
 const productsUrl = '$databaseUrl/products';
